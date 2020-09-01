@@ -1,6 +1,6 @@
 # Motor Control in Cedar
 
-This Cedar plugin allow to send motor commands through YARP
+This Cedar plugin allow to receive images through YARP
 
 Everything you want to know about DFT -> https://dynamicfieldtheory.org/
 
@@ -32,7 +32,7 @@ The code was tested with cedar and the iCub Simulator
 
 First clone the repository :
 
-`https://github.com/rouzinho/Motor2DYarp.git`
+`https://github.com/rouzinho/Camera-iCubSimDFTp.git`
 
 In the project.conf, change the CEDAR_HOME directory to your own :
 
@@ -50,7 +50,7 @@ Finally start the compilation :
 
 `make`
 
-You should see the plugin under the name libMotorTwoDim.so in the build/ repository
+You should see the plugin under the name libCameraIcub.so in the build/ repository
 
 ## Run the plugin
 
@@ -63,8 +63,6 @@ In the plugin Manager window, click on *add* and choose the plugin libMotor.so (
 You can close the window. The plugin is loaded inside cedar and before loading it, make sure your ROS node is running.
 
 You can now go back to the cedar main interface and click on the Utilities tab.
-
-Drag the MotorHead widget into the architecture panel. Connect the output of a space to rate widget to the input of the MotorHead widget. The outputs of the Neural Field now drive the motor of your choice !
 
 
 ## Work in progress
